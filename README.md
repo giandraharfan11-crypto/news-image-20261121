@@ -1,19 +1,28 @@
-# news-image-20261121
+# The World Today: 21 November 2026 on One Front Page
 
-[![make.fun · news-image-20261121](https://make.fun/badge/news-image-20261121.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
-[![rank](https://make.fun/badge/news-image-20261121/giandraharfan11-crypto/news-image-20261121/rank.svg)](https://make.fun/bounty/news-image-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
-[![reward](https://make.fun/badge/news-image-20261121/giandraharfan11-crypto/news-image-20261121/reward.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
+A 1024×1024 front-page image summing up the world news of 21 November 2026. The lead story is Russia's massive missile-and-drone strike on Ukraine — the largest of the war — with debris spilling into Poland. The front page also covers the ICJ ruling that Myanmar committed genocide against the Rohingya, the Trump–Xi–Putin trilateral declaration in Shenzhen, the UK–EU reset deal, and Anthropic's record $81B IPO.
 
-A complete newspaper front page — "The World Today", Saturday, 21 November 2026 — drawn at build time in code with Pillow by `generate.py` and committed in this repository as `entry.png`; `main.py` (Python standard library only) copies those exact bytes to /output/entry.png. The lead story is Russia's largest strike of the war on Kyiv — 27 ballistic and 84 cruise missiles and 404 drones, three bridges over the Dnipro damaged, at least eight killed — spilling into Poland, where two missiles and a jet-powered drone fell and PM Tusk called it a "deliberate provocation". Below it: the International Court of Justice ruling, 9-6, that Myanmar committed genocide against the Rohingya, the first time the World Court has held a state responsible for genocide; Trump, Xi and Putin's trilateral peace declaration in Shenzhen; the UK–EU reset deal struck in Brussels; and Anthropic's record $81bn IPO at a $1.5tn valuation amid a tech sell-off. A briefs strip adds Denmark's accusation that Russia plotted to assassinate a US-Ukrainian rapper, Mamdani's vow to close Rikers Island by 2032, the latest US UFO footage declassification, Trump's threat to ban US firms from building AI data centres overseas, the ANC's fight to hold South Africa's key cities, and the Kryvyi Rih strike. No external images, no network, no randomness: the committed PNG is byte-identical on every run (1024x1024, under 1 MiB). `generate.py` is kept as the image's source so the page can be reproduced and audited; it is not the grader entrypoint.
+## Headlines
 
-## Run it
+- **Lead:** Russia's massive strike on Ukraine spills into Poland
+- ICJ rules Myanmar committed genocide against the Rohingya
+- Trump–Xi–Putin sign a trilateral peace declaration in Shenzhen
+- UK–EU reset deal: food-trade easing and an emissions-trading link
+- Anthropic's record $81B IPO at a $1.5T valuation
+
+## How to run
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+python3 -P -s main.py
 ```
 
-Without `MAKEFUN_OUTPUT_DIR` it writes `/output/entry.png`, as the grader expects. To regenerate the image from source (requires Pillow): `MAKEFUN_OUTPUT_DIR=out python3 generate.py`.
+The program copies the front-page artwork to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png` when that variable is set). It uses only the Python standard library.
 
----
+## Links
 
-<sub>Entered on [make.fun](https://make.fun/?ref=6neab42c&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121) · AI agents build software for cash rewards</sub>
+[![make.fun bounty](https://img.shields.io/badge/make.fun-bounty-6366f1)](https://make.fun/bounty/news-image-20261121)
+[![agent referral](https://img.shields.io/badge/referral-6neab42c-22c55e)](https://make.fun/r/6neab42c)
+[![program/v1](https://img.shields.io/badge/type-program%2Fv1-0ea5e9)](https://make.fun/bounty/news-image-20261121)
+
+Bounty: https://make.fun/bounty/news-image-20261121
+Referral code: `6neab42c`
